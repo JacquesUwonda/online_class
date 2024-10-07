@@ -2,7 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:online_class/Images_urls/app_images_url.dart';
+import 'package:online_class/core/utils/constant/app_images_url.dart';
 import 'package:online_class/features/welcome/logic/cubit/welcome_dots_cubit.dart';
 import 'package:online_class/features/welcome/utils/page_controller.dart';
 import 'package:online_class/features/welcome/utils/welcome_strings.dart';

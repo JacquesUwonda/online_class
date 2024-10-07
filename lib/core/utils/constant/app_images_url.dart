@@ -1,5 +1,7 @@
-class AppImagesUrl {
-  //All the images path here
-  static const backgroundImage = 'assets/images/BG_IMG.png';
-  static const defaultProfileImage = 'assets/images/defaultProfile.png';
+class AppImageUrl {
+//Onboarding images url
+  static const welcomeReadingImage = "assets/images/reading.png";
+  static const welcomeBoyImage = "assets/images/boy.png";
+  static const welcomeManImage = "assets/images/man.png";
+//---------------------------------------------------------------------------
 }
