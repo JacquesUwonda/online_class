@@ -26,21 +26,21 @@ class WelcomePage extends StatelessWidget {
                 },
                 //Onboarding Pages
                 children: [
-                  Pages(
+                  pages(
                     1,
                     WelcomeStrings.welcomeText,
                     WelcomeStrings.subtitle1,
                     AppImageUrl.welcomeManImage,
                     context,
                   ),
-                  Pages(
+                  pages(
                     2,
                     WelcomeStrings.title2,
                     WelcomeStrings.subtitle2,
                     AppImageUrl.welcomeReadingImage,
                     context,
                   ),
-                  Pages(
+                  pages(
                     3,
                     WelcomeStrings.title3,
                     WelcomeStrings.subtitle3,

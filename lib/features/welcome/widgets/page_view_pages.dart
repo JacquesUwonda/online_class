@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget Pages(int index, String title, String subtitle, String imagePath,
+Widget pages(int index, String title, String subtitle, String imagePath,
     BuildContext context) {
   return Padding(
     padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
