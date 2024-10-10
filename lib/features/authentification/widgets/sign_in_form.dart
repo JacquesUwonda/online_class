@@ -48,8 +48,8 @@ Widget signInForm() {
             suffix: null,
             hintText: AppString.emailHintText,
           ),
-          const SizedBox(
-            height: 20,
+          SizedBox(
+            height: 20.h,
           ),
           reusableText(AppString.passwordText, 17),
           SizedBox(
@@ -85,8 +85,37 @@ Widget signInForm() {
               );
             },
           ),
-          const SizedBox(
-            height: 30,
+          SizedBox(
+            height: 15.h,
+          ),
+          Container(
+            child: forgotPassword(),
+          ),
+          reusableButton(
+            375,
+            50,
+            50,
+            0,
+            0,
+            20,
+            Colors.blue,
+            Colors.transparent,
+            AppString.signInText,
+            Colors.white,
+            20,
+          ),
+          reusableButton(
+            375,
+            50,
+            20,
+            0,
+            0,
+            20,
+            Colors.white,
+            Colors.blue,
+            AppString.signUpText,
+            Colors.blue,
+            20,
           ),
           // RoundedElevatedButton(
           //   buttonText: "Login",

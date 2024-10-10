@@ -13,7 +13,7 @@ AppBar signInAppBar() {
       ),
     ),
     title: Text(
-      AppString.signInText,
+      AppString.authentificationText,
       style: TextStyle(
           color: Colors.black.withOpacity(0.5),
           fontSize: 20.sp,
@@ -62,6 +62,66 @@ Widget reusableText(String text, int size) {
       color: Colors.black.withOpacity(0.5),
       fontSize: size.sp,
       fontWeight: FontWeight.normal,
+    ),
+  );
+}
+
+Widget forgotPassword() {
+  return GestureDetector(
+    onTap: () {},
+    child: Container(
+      alignment: Alignment.bottomRight,
+      child: Text(
+        AppString.forgotPassword,
+        style: TextStyle(
+            color: Colors.black.withOpacity(0.5),
+            decoration: TextDecoration.underline,
+            height: 0.5,
+            decorationColor: Colors.blue),
+      ),
+    ),
+  );
+}
+
+Widget reusableButton(
+    double width,
+    double height,
+    double martop,
+    double marleft,
+    double marright,
+    double radius,
+    Color bacColor,
+    Color borderColor,
+    String btnText,
+    Color? btnTextColor,
+    double btnTextSize) {
+  return Container(
+    width: width.w,
+    height: height.h,
+    margin: EdgeInsets.only(top: martop.h, left: marleft.w, right: marright.w),
+    decoration: BoxDecoration(
+      color: bacColor,
+      borderRadius: BorderRadius.all(
+        Radius.circular(radius.w),
+      ),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey.withOpacity(0.5),
+          spreadRadius: 1,
+          blurRadius: 2,
+          offset: const Offset(0, 2),
+        ),
+      ],
+      border: Border.all(color: borderColor),
+    ),
+    child: Center(
+      child: Text(
+        btnText,
+        style: TextStyle(
+          color: btnTextColor,
+          fontSize: btnTextSize.sp,
+        ),
+      ),
     ),
   );
 }

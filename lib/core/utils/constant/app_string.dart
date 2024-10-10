@@ -11,10 +11,11 @@ class AppString {
   static const passwordHintText = "Entrer le mot de passe";
   static const emailRequired = "veuillez entrer l'adresse email";
   static const passwordRequired = "veuillez entrer le mot de passe";
-  static const signInText = "Log in";
-  static const signUpText = "Sign Up";
+  static const authentificationText = "Authentification";
+  static const signInText = "Connexion";
+  static const signUpText = "S'enregistrer";
   static const invalidEmail = "Adresse email invalide";
-  // static const invalidEmail = "Adresse email invalide";
+  static const forgotPassword = "Mot de passe oublié?";
   // static const invalidEmail = "Adresse email invalide";
   // static const invalidEmail = "Adresse email invalide";
 //--------------------------------------------------------------------
