@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_class/core/utils/constant/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -38,34 +39,37 @@ class CustomTextFormField extends StatelessWidget {
         prefixIcon: prefix,
         hintText: hintText,
         contentPadding: contentPadding,
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
             fontWeight: FontWeight.w400,
             fontSize: 16,
-            color: Colors.grey.withOpacity(0.5)),
+            color: AppColors.secondaryElementColor),
         border: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey.withOpacity(0.5), width: 1),
+          borderSide: const BorderSide(
+              color: AppColors.secondaryElementColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey.withOpacity(0.5), width: 1),
+          borderSide: const BorderSide(
+              color: AppColors.secondaryElementColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey.withOpacity(0.5), width: 1),
+          borderSide:
+              const BorderSide(color: AppColors.primaryElementColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
         errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red.withOpacity(0.5), width: 1),
+          borderSide: const BorderSide(color: AppColors.errorColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red.withOpacity(0.5), width: 1),
+          borderSide: const BorderSide(color: AppColors.errorColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
         errorStyle: Theme.of(context)
             .textTheme
             .titleMedium!
-            .copyWith(color: Colors.red.withOpacity(0.5), fontSize: 12),
+            .copyWith(color: AppColors.errorColor, fontSize: 12),
       ),
       validator: validator,
     );

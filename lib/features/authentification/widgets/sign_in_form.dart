@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:online_class/core/utils/constant/app_colors.dart';
 import 'package:online_class/core/utils/constant/app_string.dart';
 import 'package:online_class/features/authentification/widgets/custom_text_form_field.dart';
 import 'package:online_class/features/authentification/widgets/sign_in_widgets.dart';
@@ -78,7 +79,7 @@ Widget signInForm() {
                     state.isPasswordVisible
                         ? Icons.visibility_off
                         : Icons.visibility,
-                    color: Colors.grey,
+                    color: AppColors.primaryElementColor,
                   ),
                 ),
                 hintText: AppString.passwordHintText,
@@ -86,7 +87,7 @@ Widget signInForm() {
             },
           ),
           SizedBox(
-            height: 15.h,
+            height: 20.h,
           ),
           Container(
             child: forgotPassword(),
@@ -98,10 +99,10 @@ Widget signInForm() {
             0,
             0,
             20,
-            Colors.blue,
+            AppColors.primaryElementColor,
             Colors.transparent,
             AppString.signInText,
-            Colors.white,
+            AppColors.primaryBackgroundColor,
             20,
           ),
           reusableButton(
@@ -111,40 +112,12 @@ Widget signInForm() {
             0,
             0,
             20,
-            Colors.white,
-            Colors.blue,
+            AppColors.primaryBackgroundColor,
+            AppColors.primaryElementColor,
             AppString.signUpText,
-            Colors.blue,
+            AppColors.primaryElementColor,
             20,
           ),
-          // RoundedElevatedButton(
-          //   buttonText: "Login",
-          //   onPressed: () {
-          //     if (_loginFormKey.currentState!.validate()) {}
-          //   },
-          // ),
-          // const SizedBox(
-          //   height: 15,
-          // ),
-          // GestureDetector(
-          //   onTap: () {
-          //   },
-          //   child: RichText(
-          //     text: const TextSpan(
-          //       text: AppString.newUser,
-          //       style: TextStyle(color: AppColor.greyColor),
-          //       children: [
-          //         TextSpan(
-          //           text: AppString.register,
-          //           style: TextStyle(
-          //             color: AppColor.secondColor,
-          //             fontWeight: FontWeight.w500,
-          //           ),
-          //         ),
-          //       ],
-          //     ),
-          //   ),
-          // )
         ],
       ),
     ),

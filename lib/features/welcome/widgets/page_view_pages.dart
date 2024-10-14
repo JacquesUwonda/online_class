@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/utils/constant/app_colors.dart';
+
 Widget pages(int index, String title, String subtitle, String imagePath,
     BuildContext context) {
   return Padding(
@@ -22,7 +24,7 @@ Widget pages(int index, String title, String subtitle, String imagePath,
               height: 1.1,
               fontWeight: FontWeight.normal,
               fontSize: 27.sp,
-              color: Colors.black),
+              color: AppColors.primaryTextColor),
         ),
         const SizedBox(
           height: 15,
@@ -33,7 +35,7 @@ Widget pages(int index, String title, String subtitle, String imagePath,
           style: TextStyle(
             fontWeight: FontWeight.normal,
             fontSize: 17.sp,
-            color: Colors.black.withOpacity(0.4),
+            color: AppColors.secondaryElementColor,
           ),
         ),
       ],

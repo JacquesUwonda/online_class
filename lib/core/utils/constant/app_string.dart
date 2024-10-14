@@ -4,7 +4,7 @@ class AppString {
 //--------------------------------------------------------------------
 
 //SignIn and SignUp strings
-  static const useEmail = "Ou j'utilise mon compte Gmail";
+  static const useEmail = "Ou utiliser mon compte Gmail";
   static const emailText = "Email";
   static const passwordText = "Mot de passe";
   static const emailHintText = "Entrer l'adresse email";

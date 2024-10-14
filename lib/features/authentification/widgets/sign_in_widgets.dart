@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:online_class/core/utils/constant/app_colors.dart';
 import 'package:online_class/core/utils/constant/app_images_url.dart';
 import 'package:online_class/core/utils/constant/app_string.dart';
 
@@ -8,14 +9,14 @@ AppBar signInAppBar() {
     bottom: PreferredSize(
       preferredSize: const Size.fromHeight(0.5),
       child: Container(
-        color: Colors.grey.withOpacity(0.5),
+        color: AppColors.fourthElementColor,
         height: 0.5,
       ),
     ),
     title: Text(
       AppString.authentificationText,
       style: TextStyle(
-          color: Colors.black.withOpacity(0.5),
+          color: AppColors.primaryTextColor,
           fontSize: 20.sp,
           fontWeight: FontWeight.normal),
     ),
@@ -59,7 +60,7 @@ Widget reusableText(String text, int size) {
   return Text(
     text,
     style: TextStyle(
-      color: Colors.black.withOpacity(0.5),
+      color: AppColors.primaryTextColor,
       fontSize: size.sp,
       fontWeight: FontWeight.normal,
     ),
@@ -71,13 +72,13 @@ Widget forgotPassword() {
     onTap: () {},
     child: Container(
       alignment: Alignment.bottomRight,
-      child: Text(
+      child: const Text(
         AppString.forgotPassword,
         style: TextStyle(
-            color: Colors.black.withOpacity(0.5),
+            color: AppColors.primaryTextColor,
             decoration: TextDecoration.underline,
             height: 0.5,
-            decorationColor: Colors.blue),
+            decorationColor: AppColors.primaryElementColor),
       ),
     ),
   );
@@ -104,12 +105,12 @@ Widget reusableButton(
       borderRadius: BorderRadius.all(
         Radius.circular(radius.w),
       ),
-      boxShadow: [
+      boxShadow: const [
         BoxShadow(
-          color: Colors.grey.withOpacity(0.5),
+          color: AppColors.thirdElementColor,
           spreadRadius: 1,
           blurRadius: 2,
-          offset: const Offset(0, 2),
+          offset: Offset(0, 2),
         ),
       ],
       border: Border.all(color: borderColor),

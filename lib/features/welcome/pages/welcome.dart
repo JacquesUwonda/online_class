@@ -10,6 +10,8 @@ import 'package:online_class/features/welcome/utils/page_controller.dart';
 import 'package:online_class/features/welcome/utils/welcome_strings.dart';
 import 'package:online_class/features/welcome/widgets/page_view_pages.dart';
 
+import '../../../core/utils/constant/app_colors.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
@@ -73,16 +75,16 @@ class WelcomePage extends StatelessWidget {
                         margin:
                             EdgeInsets.only(top: 30.h, left: 25.w, right: 25.w),
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: AppColors.primaryElementColor,
                           borderRadius: BorderRadius.all(
                             Radius.circular(50.w),
                           ),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
+                              color: AppColors.secondaryElementColor,
                               spreadRadius: 1,
                               blurRadius: 2,
-                              offset: const Offset(0, 2),
+                              offset: Offset(0, 2),
                             ),
                           ],
                         ),
@@ -92,7 +94,7 @@ class WelcomePage extends StatelessWidget {
                                 ? WelcomeStrings.btnTextNext
                                 : WelcomeStrings.btnTextGetStarted,
                             style: TextStyle(
-                                color: Colors.white,
+                                color: AppColors.primaryBackgroundColor,
                                 fontWeight: FontWeight.normal,
                                 fontSize: 16.sp),
                           ),
@@ -107,8 +109,8 @@ class WelcomePage extends StatelessWidget {
                       dotsCount: 3,
                       mainAxisAlignment: MainAxisAlignment.center,
                       decorator: DotsDecorator(
-                        color: Colors.grey,
-                        activeColor: Colors.blue,
+                        color: AppColors.secondaryElementColor,
+                        activeColor: AppColors.primaryElementColor,
                         activeSize: const Size(20, 8),
                         activeShape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
@@ -132,10 +134,10 @@ class WelcomePage extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.symmetric(
                               vertical: 3, horizontal: 8),
-                          decoration: BoxDecoration(
-                              color: Colors.grey.withOpacity(0.2),
+                          decoration: const BoxDecoration(
+                              color: AppColors.secondaryElementColor,
                               borderRadius:
-                                  const BorderRadius.all(Radius.circular(10))),
+                                  BorderRadius.all(Radius.circular(10))),
                           child: const Text(WelcomeStrings.skip),
                         ),
                       ),
