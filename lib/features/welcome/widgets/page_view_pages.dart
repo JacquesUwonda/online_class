@@ -35,7 +35,7 @@ Widget pages(int index, String title, String subtitle, String imagePath,
           style: TextStyle(
             fontWeight: FontWeight.normal,
             fontSize: 17.sp,
-            color: AppColors.secondaryElementColor,
+            color: AppColors.thirdElementColor,
           ),
         ),
       ],

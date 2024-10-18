@@ -9,6 +9,7 @@ import 'package:online_class/features/welcome/logic/cubit/welcome_dots_cubit.dar
 import 'package:online_class/features/welcome/utils/page_controller.dart';
 import 'package:online_class/features/welcome/utils/welcome_strings.dart';
 import 'package:online_class/features/welcome/widgets/page_view_pages.dart';
+import 'package:online_class/shared/widgets/shared_widgets.dart';
 
 import '../../../core/utils/constant/app_colors.dart';
 
@@ -79,14 +80,7 @@ class WelcomePage extends StatelessWidget {
                           borderRadius: BorderRadius.all(
                             Radius.circular(50.w),
                           ),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: AppColors.secondaryElementColor,
-                              spreadRadius: 1,
-                              blurRadius: 2,
-                              offset: Offset(0, 2),
-                            ),
-                          ],
+                          boxShadow: shadow(),
                         ),
                         child: Center(
                           child: Text(
@@ -109,7 +103,7 @@ class WelcomePage extends StatelessWidget {
                       dotsCount: 3,
                       mainAxisAlignment: MainAxisAlignment.center,
                       decorator: DotsDecorator(
-                        color: AppColors.secondaryElementColor,
+                        color: AppColors.fourthElementColor,
                         activeColor: AppColors.primaryElementColor,
                         activeSize: const Size(20, 8),
                         activeShape: RoundedRectangleBorder(
@@ -135,7 +129,7 @@ class WelcomePage extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               vertical: 3, horizontal: 8),
                           decoration: const BoxDecoration(
-                              color: AppColors.secondaryElementColor,
+                              color: AppColors.fourthElementColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10))),
                           child: const Text(WelcomeStrings.skip),

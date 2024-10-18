@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:online_class/core/utils/constant/app_colors.dart';
 import 'package:online_class/core/utils/constant/app_images_url.dart';
 import 'package:online_class/core/utils/constant/app_string.dart';
+import 'package:online_class/shared/widgets/shared_widgets.dart';
 
 AppBar signInAppBar() {
   return AppBar(
@@ -105,14 +106,7 @@ Widget reusableButton(
       borderRadius: BorderRadius.all(
         Radius.circular(radius.w),
       ),
-      boxShadow: const [
-        BoxShadow(
-          color: AppColors.thirdElementColor,
-          spreadRadius: 1,
-          blurRadius: 2,
-          offset: Offset(0, 2),
-        ),
-      ],
+      boxShadow: shadow(),
       border: Border.all(color: borderColor),
     ),
     child: Center(
