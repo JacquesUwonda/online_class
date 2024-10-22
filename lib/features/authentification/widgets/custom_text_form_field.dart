@@ -4,6 +4,7 @@ import 'package:online_class/core/utils/constant/app_colors.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
+    required this.function,
     required this.controller,
     required this.validator,
     required this.keyboardType,
@@ -13,6 +14,7 @@ class CustomTextFormField extends StatelessWidget {
     required this.hintText,
   });
 
+  final Function(String value)? function;
   final TextEditingController controller;
   final String? Function(String? val) validator;
   final TextInputType keyboardType;
@@ -29,6 +31,7 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onChanged: function,
       obscureText: obscureText,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       controller: controller,
